@@ -1,0 +1,5 @@
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle.Threading4\C.Fiddle.Threading4\bin\Debug\C.Fiddle.Threading4.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle.Threading4\C.Fiddle.Threading4\bin\Debug\C.Fiddle.Threading4.exe
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle.Threading4\C.Fiddle.Threading4\bin\Debug\C.Fiddle.Threading4.pdb
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle.Threading4\C.Fiddle.Threading4\obj\Debug\C.Fiddle.Threading4.exe
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle.Threading4\C.Fiddle.Threading4\obj\Debug\C.Fiddle.Threading4.pdb

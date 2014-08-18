@@ -1,0 +1,6 @@
+c:\users\chris\documents\visual studio 2013\Projects\SecurityTest\SecurityTest\bin\Debug\SecurityTest.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\SecurityTest\SecurityTest\obj\Debug\SecurityTest.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2013\Projects\SecurityTest\SecurityTest\bin\Debug\SecurityTest.exe
+c:\users\chris\documents\visual studio 2013\Projects\SecurityTest\SecurityTest\bin\Debug\SecurityTest.pdb
+c:\users\chris\documents\visual studio 2013\Projects\SecurityTest\SecurityTest\obj\Debug\SecurityTest.exe
+c:\users\chris\documents\visual studio 2013\Projects\SecurityTest\SecurityTest\obj\Debug\SecurityTest.pdb

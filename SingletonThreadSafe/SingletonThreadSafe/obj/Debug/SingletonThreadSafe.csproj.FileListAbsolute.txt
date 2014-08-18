@@ -1,0 +1,6 @@
+c:\users\chris\documents\visual studio 2013\Projects\SingletonThreadSafe\SingletonThreadSafe\bin\Debug\SingletonThreadSafe.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\SingletonThreadSafe\SingletonThreadSafe\bin\Debug\SingletonThreadSafe.exe
+c:\users\chris\documents\visual studio 2013\Projects\SingletonThreadSafe\SingletonThreadSafe\bin\Debug\SingletonThreadSafe.pdb
+c:\users\chris\documents\visual studio 2013\Projects\SingletonThreadSafe\SingletonThreadSafe\obj\Debug\SingletonThreadSafe.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2013\Projects\SingletonThreadSafe\SingletonThreadSafe\obj\Debug\SingletonThreadSafe.exe
+c:\users\chris\documents\visual studio 2013\Projects\SingletonThreadSafe\SingletonThreadSafe\obj\Debug\SingletonThreadSafe.pdb

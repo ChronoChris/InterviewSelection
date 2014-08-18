@@ -1,0 +1,6 @@
+c:\users\chris\documents\visual studio 2013\Projects\TerranOrToss\TerranOrToss\bin\Debug\TerranOrToss.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\TerranOrToss\TerranOrToss\bin\Debug\TerranOrToss.exe
+c:\users\chris\documents\visual studio 2013\Projects\TerranOrToss\TerranOrToss\bin\Debug\TerranOrToss.pdb
+c:\users\chris\documents\visual studio 2013\Projects\TerranOrToss\TerranOrToss\obj\Debug\TerranOrToss.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2013\Projects\TerranOrToss\TerranOrToss\obj\Debug\TerranOrToss.exe
+c:\users\chris\documents\visual studio 2013\Projects\TerranOrToss\TerranOrToss\obj\Debug\TerranOrToss.pdb

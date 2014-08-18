@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9628eef69d76459bb6fadeb20f1ca8aa" Name="Diagram1">
+        <EntityTypeShape EntityType="ConstructionDB4Model.Appointment" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionDB4Model.AppointmentsEmployee" Width="1.5" PointX="7.5" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionDB4Model.Asset" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionDB4Model.BusinessEntity" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionDB4Model.Customer" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionDB4Model.Employee" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionDB4Model.Project" Width="1.5" PointX="8.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionDB4Model.ProjectsEmployee" Width="1.5" PointX="10.5" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionDB4Model.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_Appointments_BusinessEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_Appointments_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_AppointmentsEmployees_Appointments" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_AppointmentEmployee_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_Assets_BusinessEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_Assets_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_Customers_BusinessEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_Employees_BusinessEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_Projects_BusinessEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_Projects_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_ProjectsEmployees_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstructionDB4Model.FK_ProjectsEmployees_Projects" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

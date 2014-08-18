@@ -1,0 +1,6 @@
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleGetSetTest1\C.FiddleGetSetTest1\bin\Debug\C.FiddleGetSetTest1.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleGetSetTest1\C.FiddleGetSetTest1\bin\Debug\C.FiddleGetSetTest1.exe
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleGetSetTest1\C.FiddleGetSetTest1\bin\Debug\C.FiddleGetSetTest1.pdb
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleGetSetTest1\C.FiddleGetSetTest1\obj\Debug\C.FiddleGetSetTest1.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleGetSetTest1\C.FiddleGetSetTest1\obj\Debug\C.FiddleGetSetTest1.exe
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleGetSetTest1\C.FiddleGetSetTest1\obj\Debug\C.FiddleGetSetTest1.pdb

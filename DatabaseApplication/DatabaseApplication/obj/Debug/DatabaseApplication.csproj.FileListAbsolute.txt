@@ -1,0 +1,12 @@
+c:\users\chris\documents\visual studio 2013\Projects\DatabaseApplication\DatabaseApplication\bin\Debug\DatabaseApplication.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\DatabaseApplication\DatabaseApplication\obj\Debug\DatabaseApplication.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DatabaseApplication\DatabaseApplication\bin\Debug\ConstructionDB4.mdf
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DatabaseApplication\DatabaseApplication\bin\Debug\ConstructionDB4_log.ldf
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DatabaseApplication\DatabaseApplication\bin\Debug\DatabaseApplication.exe
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DatabaseApplication\DatabaseApplication\bin\Debug\DatabaseApplication.pdb
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DatabaseApplication\DatabaseApplication\bin\Debug\EntityFramework.dll
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DatabaseApplication\DatabaseApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DatabaseApplication\DatabaseApplication\bin\Debug\EntityFramework.xml
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DatabaseApplication\DatabaseApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DatabaseApplication\DatabaseApplication\obj\Debug\DatabaseApplication.exe
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DatabaseApplication\DatabaseApplication\obj\Debug\DatabaseApplication.pdb

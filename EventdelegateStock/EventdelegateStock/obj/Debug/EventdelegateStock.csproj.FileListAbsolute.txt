@@ -1,0 +1,6 @@
+c:\users\chris\documents\visual studio 2013\Projects\EventdelegateStock\EventdelegateStock\bin\Debug\EventdelegateStock.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\EventdelegateStock\EventdelegateStock\bin\Debug\EventdelegateStock.exe
+c:\users\chris\documents\visual studio 2013\Projects\EventdelegateStock\EventdelegateStock\bin\Debug\EventdelegateStock.pdb
+c:\users\chris\documents\visual studio 2013\Projects\EventdelegateStock\EventdelegateStock\obj\Debug\EventdelegateStock.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2013\Projects\EventdelegateStock\EventdelegateStock\obj\Debug\EventdelegateStock.exe
+c:\users\chris\documents\visual studio 2013\Projects\EventdelegateStock\EventdelegateStock\obj\Debug\EventdelegateStock.pdb

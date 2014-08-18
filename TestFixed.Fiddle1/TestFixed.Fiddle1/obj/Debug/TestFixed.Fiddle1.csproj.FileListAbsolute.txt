@@ -1,0 +1,6 @@
+c:\users\chris\documents\visual studio 2013\Projects\TestFixed.Fiddle1\TestFixed.Fiddle1\bin\Debug\TestFixed.Fiddle1.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\TestFixed.Fiddle1\TestFixed.Fiddle1\obj\Debug\TestFixed.Fiddle1.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2013\Projects\TestFixed.Fiddle1\TestFixed.Fiddle1\bin\Debug\TestFixed.Fiddle1.exe
+c:\users\chris\documents\visual studio 2013\Projects\TestFixed.Fiddle1\TestFixed.Fiddle1\bin\Debug\TestFixed.Fiddle1.pdb
+c:\users\chris\documents\visual studio 2013\Projects\TestFixed.Fiddle1\TestFixed.Fiddle1\obj\Debug\TestFixed.Fiddle1.exe
+c:\users\chris\documents\visual studio 2013\Projects\TestFixed.Fiddle1\TestFixed.Fiddle1\obj\Debug\TestFixed.Fiddle1.pdb

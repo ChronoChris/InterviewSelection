@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConstructionDB4Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Appointment">
+    <Key>
+      <PropertyRef Name="AppointmentId" />
+    </Key>
+    <Property Name="AppointmentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Appointmenttime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Appointmentdate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="AppointmentLocation" Type="Geography" Nullable="false" />
+    <Property Name="EntityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BusinessEntity" Relationship="Self.FK_Appointments_BusinessEntity" FromRole="Appointments" ToRole="BusinessEntity" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_Appointments_Customers" FromRole="Appointments" ToRole="Customers" />
+    <NavigationProperty Name="AppointmentsEmployees" Relationship="Self.FK_AppointmentsEmployees_Appointments" FromRole="Appointments" ToRole="AppointmentsEmployees" />
+  </EntityType>
+  <EntityType Name="AppointmentsEmployee">
+    <Key>
+      <PropertyRef Name="AppointmentEmployeeId" />
+    </Key>
+    <Property Name="AppointmentEmployeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+    <Property Name="AppointmentId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Appointment" Relationship="Self.FK_AppointmentsEmployees_Appointments" FromRole="AppointmentsEmployees" ToRole="Appointments" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_AppointmentEmployee_Employees" FromRole="AppointmentsEmployees" ToRole="Employees" />
+  </EntityType>
+  <EntityType Name="Asset">
+    <Key>
+      <PropertyRef Name="AssetId" />
+    </Key>
+    <Property Name="AssetId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AssetModelNo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AssetPic" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="AssetLocation" Type="Geography" Nullable="false" />
+    <Property Name="AssetBookValue" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AssetDepYear" Type="Int16" Nullable="false" />
+    <Property Name="AssetAcqDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" Nullable="false" />
+    <Property Name="EntityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BusinessEntity" Relationship="Self.FK_Assets_BusinessEntity" FromRole="Assets" ToRole="BusinessEntity" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_Assets_Projects" FromRole="Assets" ToRole="Projects" />
+  </EntityType>
+  <EntityType Name="BusinessEntity">
+    <Key>
+      <PropertyRef Name="EntityId" />
+    </Key>
+    <Property Name="EntityId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EntityName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EntityContact" Type="Decimal" Precision="14" Scale="0" Nullable="false" />
+    <Property Name="EntityContactName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EntityPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Appointments" Relationship="Self.FK_Appointments_BusinessEntity" FromRole="BusinessEntity" ToRole="Appointments" />
+    <NavigationProperty Name="Assets" Relationship="Self.FK_Assets_BusinessEntity" FromRole="BusinessEntity" ToRole="Assets" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_BusinessEntity" FromRole="BusinessEntity" ToRole="Customers" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK_Employees_BusinessEntity" FromRole="BusinessEntity" ToRole="Employees" />
+    <NavigationProperty Name="Projects" Relationship="Self.FK_Projects_BusinessEntity" FromRole="BusinessEntity" ToRole="Projects" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerFirstName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustomerLastName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustomerPhone" Type="Decimal" Precision="14" Scale="0" Nullable="false" />
+    <Property Name="CustomerEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustAcqDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EntityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Appointments" Relationship="Self.FK_Appointments_Customers" FromRole="Customers" ToRole="Appointments" />
+    <NavigationProperty Name="BusinessEntity" Relationship="Self.FK_Customers_BusinessEntity" FromRole="Customers" ToRole="BusinessEntity" />
+    <NavigationProperty Name="Projects" Relationship="Self.FK_Projects_Customers" FromRole="Customers" ToRole="Projects" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+    </Key>
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeFirstName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EmployeeLastName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EmployeePhone" Type="Decimal" Precision="14" Scale="0" Nullable="false" />
+    <Property Name="EmployeeEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EmployeeEMcontact" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EmployeeEMphone" Type="Decimal" Precision="14" Scale="0" Nullable="false" />
+    <Property Name="EmployeeHireDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EmployeeReleaseDate" Type="DateTime" Precision="3" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsPermissions" Type="Boolean" Nullable="false" />
+    <Property Name="EntityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AppointmentsEmployees" Relationship="Self.FK_AppointmentEmployee_Employees" FromRole="Employees" ToRole="AppointmentsEmployees" />
+    <NavigationProperty Name="BusinessEntity" Relationship="Self.FK_Employees_BusinessEntity" FromRole="Employees" ToRole="BusinessEntity" />
+    <NavigationProperty Name="ProjectsEmployees" Relationship="Self.FK_ProjectsEmployees_Employees" FromRole="Employees" ToRole="ProjectsEmployees" />
+  </EntityType>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="ProjectId" />
+    </Key>
+    <Property Name="ProjectId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectLocation" Type="Geography" Nullable="false" />
+    <Property Name="ProjectDescript" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProjectCost" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ProjectSale" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="ProjectCompletionDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ProjectStartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EntityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Assets" Relationship="Self.FK_Assets_Projects" FromRole="Projects" ToRole="Assets" />
+    <NavigationProperty Name="BusinessEntity" Relationship="Self.FK_Projects_BusinessEntity" FromRole="Projects" ToRole="BusinessEntity" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_Projects_Customers" FromRole="Projects" ToRole="Customers" />
+    <NavigationProperty Name="ProjectsEmployees" Relationship="Self.FK_ProjectsEmployees_Projects" FromRole="Projects" ToRole="ProjectsEmployees" />
+  </EntityType>
+  <EntityType Name="ProjectsEmployee">
+    <Key>
+      <PropertyRef Name="ProjectEmployeeId" />
+    </Key>
+    <Property Name="ProjectEmployeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+    <Property Name="ProjectId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_ProjectsEmployees_Employees" FromRole="ProjectsEmployees" ToRole="Employees" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_ProjectsEmployees_Projects" FromRole="ProjectsEmployees" ToRole="Projects" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Appointments_BusinessEntity">
+    <End Role="BusinessEntity" Type="Self.BusinessEntity" Multiplicity="1" />
+    <End Role="Appointments" Type="Self.Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BusinessEntity">
+        <PropertyRef Name="EntityId" />
+      </Principal>
+      <Dependent Role="Appointments">
+        <PropertyRef Name="EntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appointments_Customers">
+    <End Role="Customers" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Appointments" Type="Self.Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Appointments">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AppointmentsEmployees_Appointments">
+    <End Role="Appointments" Type="Self.Appointment" Multiplicity="1" />
+    <End Role="AppointmentsEmployees" Type="Self.AppointmentsEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appointments">
+        <PropertyRef Name="AppointmentId" />
+      </Principal>
+      <Dependent Role="AppointmentsEmployees">
+        <PropertyRef Name="AppointmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AppointmentEmployee_Employees">
+    <End Role="Employees" Type="Self.Employee" Multiplicity="1" />
+    <End Role="AppointmentsEmployees" Type="Self.AppointmentsEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="AppointmentsEmployees">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Assets_BusinessEntity">
+    <End Role="BusinessEntity" Type="Self.BusinessEntity" Multiplicity="1" />
+    <End Role="Assets" Type="Self.Asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BusinessEntity">
+        <PropertyRef Name="EntityId" />
+      </Principal>
+      <Dependent Role="Assets">
+        <PropertyRef Name="EntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Assets_Projects">
+    <End Role="Projects" Type="Self.Project" Multiplicity="1" />
+    <End Role="Assets" Type="Self.Asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="Assets">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_BusinessEntity">
+    <End Role="BusinessEntity" Type="Self.BusinessEntity" Multiplicity="1" />
+    <End Role="Customers" Type="Self.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BusinessEntity">
+        <PropertyRef Name="EntityId" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="EntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employees_BusinessEntity">
+    <End Role="BusinessEntity" Type="Self.BusinessEntity" Multiplicity="1" />
+    <End Role="Employees" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BusinessEntity">
+        <PropertyRef Name="EntityId" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="EntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Projects_BusinessEntity">
+    <End Role="BusinessEntity" Type="Self.BusinessEntity" Multiplicity="1" />
+    <End Role="Projects" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BusinessEntity">
+        <PropertyRef Name="EntityId" />
+      </Principal>
+      <Dependent Role="Projects">
+        <PropertyRef Name="EntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Projects_Customers">
+    <End Role="Customers" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Projects" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Projects">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectsEmployees_Employees">
+    <End Role="Employees" Type="Self.Employee" Multiplicity="1" />
+    <End Role="ProjectsEmployees" Type="Self.ProjectsEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="ProjectsEmployees">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectsEmployees_Projects">
+    <End Role="Projects" Type="Self.Project" Multiplicity="1" />
+    <End Role="ProjectsEmployees" Type="Self.ProjectsEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="ProjectsEmployees">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ConstructionDB4Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Appointments" EntityType="Self.Appointment" />
+    <EntitySet Name="AppointmentsEmployees" EntityType="Self.AppointmentsEmployee" />
+    <EntitySet Name="Assets" EntityType="Self.Asset" />
+    <EntitySet Name="BusinessEntities" EntityType="Self.BusinessEntity" />
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="Projects" EntityType="Self.Project" />
+    <EntitySet Name="ProjectsEmployees" EntityType="Self.ProjectsEmployee" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="FK_Appointments_BusinessEntity" Association="Self.FK_Appointments_BusinessEntity">
+      <End Role="BusinessEntity" EntitySet="BusinessEntities" />
+      <End Role="Appointments" EntitySet="Appointments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appointments_Customers" Association="Self.FK_Appointments_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Appointments" EntitySet="Appointments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AppointmentsEmployees_Appointments" Association="Self.FK_AppointmentsEmployees_Appointments">
+      <End Role="Appointments" EntitySet="Appointments" />
+      <End Role="AppointmentsEmployees" EntitySet="AppointmentsEmployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AppointmentEmployee_Employees" Association="Self.FK_AppointmentEmployee_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="AppointmentsEmployees" EntitySet="AppointmentsEmployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Assets_BusinessEntity" Association="Self.FK_Assets_BusinessEntity">
+      <End Role="BusinessEntity" EntitySet="BusinessEntities" />
+      <End Role="Assets" EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Assets_Projects" Association="Self.FK_Assets_Projects">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="Assets" EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_BusinessEntity" Association="Self.FK_Customers_BusinessEntity">
+      <End Role="BusinessEntity" EntitySet="BusinessEntities" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employees_BusinessEntity" Association="Self.FK_Employees_BusinessEntity">
+      <End Role="BusinessEntity" EntitySet="BusinessEntities" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Projects_BusinessEntity" Association="Self.FK_Projects_BusinessEntity">
+      <End Role="BusinessEntity" EntitySet="BusinessEntities" />
+      <End Role="Projects" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Projects_Customers" Association="Self.FK_Projects_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Projects" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectsEmployees_Employees" Association="Self.FK_ProjectsEmployees_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="ProjectsEmployees" EntitySet="ProjectsEmployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectsEmployees_Projects" Association="Self.FK_ProjectsEmployees_Projects">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="ProjectsEmployees" EntitySet="ProjectsEmployees" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(ConstructionDB4Model.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(ConstructionDB4Model.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

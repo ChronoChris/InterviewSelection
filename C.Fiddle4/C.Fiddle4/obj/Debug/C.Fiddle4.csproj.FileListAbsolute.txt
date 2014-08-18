@@ -1,0 +1,6 @@
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle4\C.Fiddle4\bin\Debug\C.Fiddle4.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle4\C.Fiddle4\bin\Debug\C.Fiddle4.exe
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle4\C.Fiddle4\bin\Debug\C.Fiddle4.pdb
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle4\C.Fiddle4\obj\Debug\C.Fiddle4.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle4\C.Fiddle4\obj\Debug\C.Fiddle4.exe
+c:\users\chris\documents\visual studio 2013\Projects\C.Fiddle4\C.Fiddle4\obj\Debug\C.Fiddle4.pdb

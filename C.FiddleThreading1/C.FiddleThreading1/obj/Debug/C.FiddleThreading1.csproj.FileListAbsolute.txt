@@ -1,0 +1,6 @@
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleThreading1\C.FiddleThreading1\bin\Debug\C.FiddleThreading1.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleThreading1\C.FiddleThreading1\bin\Debug\C.FiddleThreading1.exe
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleThreading1\C.FiddleThreading1\bin\Debug\C.FiddleThreading1.pdb
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleThreading1\C.FiddleThreading1\obj\Debug\C.FiddleThreading1.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleThreading1\C.FiddleThreading1\obj\Debug\C.FiddleThreading1.exe
+c:\users\chris\documents\visual studio 2013\Projects\C.FiddleThreading1\C.FiddleThreading1\obj\Debug\C.FiddleThreading1.pdb

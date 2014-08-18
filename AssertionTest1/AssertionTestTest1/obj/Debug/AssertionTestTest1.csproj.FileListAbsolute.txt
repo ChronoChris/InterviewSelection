@@ -1,0 +1,7 @@
+c:\users\chris\documents\visual studio 2013\Projects\AssertionTest1\AssertionTestTest1\bin\Debug\AssertionTestTest1.dll
+c:\users\chris\documents\visual studio 2013\Projects\AssertionTest1\AssertionTestTest1\bin\Debug\AssertionTestTest1.pdb
+c:\users\chris\documents\visual studio 2013\Projects\AssertionTest1\AssertionTestTest1\bin\Debug\AssertionTest1.exe
+c:\users\chris\documents\visual studio 2013\Projects\AssertionTest1\AssertionTestTest1\bin\Debug\AssertionTest1.pdb
+c:\users\chris\documents\visual studio 2013\Projects\AssertionTest1\AssertionTestTest1\obj\Debug\AssertionTestTest1.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2013\Projects\AssertionTest1\AssertionTestTest1\obj\Debug\AssertionTestTest1.dll
+c:\users\chris\documents\visual studio 2013\Projects\AssertionTest1\AssertionTestTest1\obj\Debug\AssertionTestTest1.pdb

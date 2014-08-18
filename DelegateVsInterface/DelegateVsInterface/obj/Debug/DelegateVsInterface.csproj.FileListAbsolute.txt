@@ -1,0 +1,6 @@
+c:\users\chris\documents\visual studio 2013\Projects\DelegateVsInterface\DelegateVsInterface\bin\Debug\DelegateVsInterface.exe.config
+c:\users\chris\documents\visual studio 2013\Projects\DelegateVsInterface\DelegateVsInterface\bin\Debug\DelegateVsInterface.exe
+c:\users\chris\documents\visual studio 2013\Projects\DelegateVsInterface\DelegateVsInterface\bin\Debug\DelegateVsInterface.pdb
+c:\users\chris\documents\visual studio 2013\Projects\DelegateVsInterface\DelegateVsInterface\obj\Debug\DelegateVsInterface.exe
+c:\users\chris\documents\visual studio 2013\Projects\DelegateVsInterface\DelegateVsInterface\obj\Debug\DelegateVsInterface.pdb
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\DelegateVsInterface\DelegateVsInterface\obj\Debug\DelegateVsInterface.csprojResolveAssemblyReference.cache
